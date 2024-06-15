@@ -30,7 +30,7 @@ public class ReadSymptomDataFromFile implements ISymptomReader {
 	@Override
 
 	// J'implémente la méthode 'GetSymptoms' de l'interface 'ISymptomsReader'.
-	public List<String> GetSymptoms() {
+	public List<String> getSymptoms() {
 
 		// J'initialise une liste qui stock les symptômes lus.
 		ArrayList<String> result = new ArrayList<String>();

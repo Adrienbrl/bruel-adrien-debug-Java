@@ -33,17 +33,5 @@ public class AnalyticsCounter {
     public void writeSymptoms(Map<String, Integer> symptoms) {
         writer.writeSymptoms(symptoms);
     }
-
-    public static void main(String[] args) {
-        ISymptomReader reader = new ReadSymptomDataFromFile("symptoms.txt");
-        ISymptomWriter writer = new WriteSymptomDataToFile("results.out");
-
-        AnalyticsCounter counter = new AnalyticsCounter(reader, writer);
-
-        List<String> symptoms = counter.getSymptoms();
-        Map<String, Integer> symptomCounts = counter.countSymptoms(symptoms);
-        Map<String, Integer> sortedSymptoms = counter.sortSymptoms(symptomCounts);
-        counter.writeSymptoms(sortedSymptoms);
-    }
 }
 

@@ -6,6 +6,7 @@ import java.util.Map;
  * Anything that will write symptom data to a destination.
  */
 public interface ISymptomWriter {
+    
     /**
      * Writes symptoms and their occurrences to a destination.
      *
